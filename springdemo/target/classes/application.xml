@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="stringProcess"
+		class="com.hm.spring.StringProcess">
+		<property name="getString" ref="stringSource">
+		</property>
+	</bean>
+	<!-- 客户入口 -->
+	<bean id="stringSource"
+		class="com.hm.spring.FileFromString"></bean>
+</beans>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<bean id="stringProcess"
+		class="com.hm.demo.springdemo2.StringProcess">
+		<property name="getString" ref="stringSource">
+		</property>
+	</bean>
+	<!-- 客户入口 -->
+	<bean id="stringSource" class="com.hm.demo.springdemo2.FileFromString"></bean>
+</configs>
